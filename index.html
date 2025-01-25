@@ -59,15 +59,19 @@ html {
     <br><br>
     
     <button class="button"
-        onclick="document.getElementById('clock').innerHTML = Date(year, monthIndex, day, hours, minutes, seconds)">+++ What time is it? +++</button>
-    </button>
+        onclick="timeFunction()">+++ What time is it? +++</button>
 
     <p id="clock"></p>
     <br><br><br>
     <img src="detroiters.gif" alt="Detroiters">
-<!--    <div class="container">
-        <img src="detroiters.gif" alt="Detroiters">
-    </div> -->
+
 </div>
+
+<script>
+function timeFunction() {
+  document.getElementById("clock").innerHTML = Date();
+}
+</script>
+
 </body>
 </html>
