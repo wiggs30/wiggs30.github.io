@@ -41,7 +41,7 @@ html {
 }
 
 .content {
-  max-width: 600px;
+  /*max-width: 600px;*/
   margin: auto;
   padding: 10px;
   font-family: "Times New Roman", Times, serif;
@@ -59,7 +59,7 @@ html {
     <br><br>
     
     <button class="button"
-        onclick="document.getElementById('clock').innerHTML = Date()">+++ What time is it? +++</button>
+        onclick="document.getElementById('clock').innerHTML = Date().toJSON()">+++ What time is it? +++</button>
     </button>
 
     <p id="clock"></p>
