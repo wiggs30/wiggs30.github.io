@@ -69,7 +69,9 @@ html {
 
 <script>
 function timeFunction() {
-  document.getElementById("clock").innerHTML = Date();
+    var date = new Date():
+    var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "-" + date.getDate() + "-" + date.getYear();
+    document.getElementById("clock").innerHTML = timestamp;
 }
 </script>
 
