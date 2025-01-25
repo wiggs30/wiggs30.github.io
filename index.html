@@ -4,6 +4,36 @@
 <style>
 body {
   background: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
 }
 
 .content {
@@ -17,18 +47,20 @@ body {
 <body>
 
 <div class="content">
-<h1 style="text-align:center;">Extreme Webpage</h1>
-<p style="text-align:center;">New <del>Partition</del> Section</p>
-<a href="https://pitchfork.com/">Content link - TBD</a>
-<br><br>
+    <h1 style="text-align:center;">Extreme Webpage</h1>
+    <p style="text-align:center;">New <del>Partition</del> Section</p>
+    <a href="https://pitchfork.com/">Content link - TBD</a>
+    <br><br>
+    
+    <p><button class="button">+++ What time is it? +++</button></p>
+    <!--<button type="button"
+    onclick="document.getElementById('clock').innerHTML = Date()">+++ What time is it? +++</button>
 
-<button type="button"
-onclick="document.getElementById('clock').innerHTML = Date()">+++ What time is it? +++.</button>
-
-<p id="clock"></p>
-<br><br>
-
-<img src="baires-architecture.jpg" width="400" height="300" style="text-align:center;">
+    <p id="clock"></p>-->
+    <br><br>
+    <div class="container">
+        <img src="baires-architecture.jpg" width="400" height="300" style="text-align:center;">
+    </div>
 </div>
 </body>
 </html>
