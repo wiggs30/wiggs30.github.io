@@ -58,8 +58,11 @@ html {
     <a href="https://pitchfork.com/">Content link - TBD</a>
     <br><br>
     
-    <button class="button"
+    <!--<button class="button"
         onclick="timeFunction()">+++ What time is it? +++</button>
+    </button>   -->
+    <button class="button"
+        onclick="document.getElementById('clock').innerHTML = Date()">+++ What time is it? +++</button>
     </button>
 
     <p id="clock"></p>
