@@ -65,7 +65,20 @@ html {
     <p id="clock"></p> 
     <br><br><br>
     <!--  <img src="detroiters.gif" alt="Detroiters">  -->
-
+    <button onclick="timeFunction()">Test function button</button>
+    
 </div>
+
+<script>
+function timeFunction() {
+    var date = new Date():
+    console.log(date.toDateString());
+    var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear();
+    const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+    document.write(timestamp);
+    console.log(formattedDate);
+}
+</script>
+
 </body>
 </html>
