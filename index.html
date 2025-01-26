@@ -58,7 +58,7 @@ html {
     <a href="https://pitchfork.com/">Content link - TBD</a>
     <br><br>
     
-    <button onclick="timeFunction()">+++ What time is it? +++</button>
+    <button class="button" onclick="timeFunction()">+++ What time is it? +++</button>
     
     <!--<button class="button"
         onclick="document.getElementById('clock').innerHTML = Date()">+++ What time is it? +++</button>
@@ -74,7 +74,7 @@ html {
 function timeFunction() {
     var date = new Date():
     //var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear();
-    document.getElementById('clock').innerHTML = date;
+    document.getElementById('clock').innerHTML = Date();
 }
 </script>
 
