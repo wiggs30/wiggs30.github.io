@@ -66,19 +66,17 @@ html {
     <br><br><br>
     <!--  <img src="detroiters.gif" alt="Detroiters">  -->
     <button onclick="timeFunction()">Test function button</button>
-    <div id="test_button"></div>
+    <p id="test_button"></p>
 </div>
 
 <script>
 function timeFunction() {
-    var date = new Date():
-    console.log(date.toDateString());
+    var date = new Date();
+    //console.log(date.toDateString());
+    //document.getElementById('test_button').innerHTML = date.toDateString();
     var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear();
-    const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
-    document.write(timestamp);
-    console.log(formattedDate);
+    document.getElementById('test_button').innerHTML = timestamp;
 }
-document.getElementById('test_button').innerHTML = Date();
 </script>
 
 </body>
