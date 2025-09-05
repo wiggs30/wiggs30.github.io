@@ -66,8 +66,9 @@ html {
     <br><br><br>
     <!-- img src="detroiters.gif" alt="Detroiters">  -->
     
-    <button class="button" onclick="timeFunction()">Test function button</button>
+    <button class="button" onclick="timeFunction(); showImage()">Test functions button</button>
     <p id="test_button"></p>
+     <p id="detroiters"></p>
 </div>
 
 <script>
@@ -80,6 +81,9 @@ function timeFunction() {
    const currentDay = dayNames[date.getDay()];
     var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " "+ currentDay +", " + month + " " + date.getDate() + ", " + date.getFullYear();
     document.getElementById('test_button').innerHTML = timestamp;
+}
+function showImage() {
+    document.getElementById('detroiters').innerHTML = "<img src='detroiters.gif'/>";
 }
 </script>
 
