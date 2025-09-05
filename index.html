@@ -68,7 +68,6 @@ html {
     
     <button onclick="timeFunction()">Test function button</button>
     <p id="test_button"></p>
-   <img id="detroiters" src="detroiters.jpg" alt="Detroiters">
 </div>
 
 <script>
@@ -81,7 +80,6 @@ function timeFunction() {
    const currentDay = dayNames[date.getDay()];
     var timestamp = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " "+ currentDay +", " + month + " " + date.getDate() + ", " + date.getFullYear();
     document.getElementById('test_button').innerHTML = timestamp;
-    const imageElement = document.getElementById("detroiters");
 }
 </script>
 
